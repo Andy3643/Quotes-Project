@@ -1,0 +1,13 @@
+span{
+    color: blue;
+    font-size: 23px;
+    font-weight: bold;
+}
+#displayline{
+    margin: 100p,0;
+    background-color: aqua;
+}
+.moreBtn{
+    background-color: red;
+    width: 23vw;
+}

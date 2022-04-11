@@ -1,5 +1,7 @@
 .sumbmitBtn{
     background-color: aqua;
     width: 100%;
+    color: black;
+    font-weight: bold;
     border: none;
 }

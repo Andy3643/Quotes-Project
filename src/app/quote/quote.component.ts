@@ -8,17 +8,19 @@ import { Quote } from '../quotes';
 export class QuoteComponent implements OnInit {
   downVote = 0;
   upVote = 0;
+  ShowMore:boolean = true;
 
   quotes = [
     new Quote(1, "Men like us, Mr Shelby, will always be alone. And what love we get, we will have to pay for..", "Chester Campbell",0, 0, "Peaky Blinders"),
     // new Quote(2, "Keep Pushing .", "Random Guy", 0, 0,"Charlo")
   ]
   toggleDetails(index:number) {
+    this.ShowMore = !this.ShowMore,
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
-  deleteQuote(isDelete: any, index: number) {
+  deleteQuote(deleteQuote: any, index: number) {
 
-    if (isDelete) {
+    if (deleteQuote) {
       let toDelete = confirm("You are about.");
       if (toDelete) {
         this.quotes.splice(index, 1)
@@ -46,7 +48,7 @@ export class QuoteComponent implements OnInit {
   minusVote(reduceVote: any, index: number) {
     if (reduceVote) {
       this.quotes[index].downVote -= 1;
-      //this.quotes[index].upVote -= 1;
+      this.quotes[index].upVote -= 1;
     }
   }
 

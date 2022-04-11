@@ -8,18 +8,18 @@ import { Quote } from '../quotes';
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote!:Quote  ;
   
-  @Output() isDelete = new EventEmitter<boolean>();
-  @Output() isPlus = new EventEmitter<boolean>();
-  @Output() isMinus = new EventEmitter<boolean>();
+  @Output() deleteQuote = new EventEmitter<boolean>();
+  @Output() addVote = new EventEmitter<boolean>();
+  @Output() reduceVote = new EventEmitter<boolean>();
   
   quoteDelete(remove:boolean) {
-    this.isDelete.emit(remove);
+    this.deleteQuote.emit(remove);
   }
   votePlus(plus:boolean) {
-    this.isPlus.emit(plus);
+    this.addVote.emit(plus);
   }
   voteMinus(minus:boolean) {
-    this.isMinus.emit(minus);
+    this.reduceVote.emit(minus);
   }
   constructor() { }
 

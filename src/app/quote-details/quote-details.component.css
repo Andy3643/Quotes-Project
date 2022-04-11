@@ -1,0 +1,13 @@
+.upvote{
+    background-color: rgb(85, 246, 4);
+    margin: 15px;
+
+}
+.downvote{
+    background-color: rgb(209, 140, 21);
+    margin: 15px;
+}
+.delete{
+    background-color: red;
+    margin: 15px;
+}

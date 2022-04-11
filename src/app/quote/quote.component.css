@@ -1,5 +1,5 @@
 span{
-    color: blue;
+    color: white;
     font-size: 23px;
     font-weight: bold;
 }
@@ -8,6 +8,7 @@ span{
     background-color: aqua;
 }
 .moreBtn{
-    background-color: red;
-    width: 23vw;
+    background-color: aqua;
+    width: 30%;
+    border: none;
 }

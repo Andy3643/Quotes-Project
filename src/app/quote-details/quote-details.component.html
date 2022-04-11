@@ -2,7 +2,7 @@
     <br>
     <p><cite>Posted on: {{quote.submitDate | date}}</cite></p>
     <p> <cite>By  {{quote.yourName}} </cite></p>
-    <button class="btn btn-primary" (click)='votePlus(true)' type="button" name="button">upVote:{{quote.upVote}}</button>
-    <button class="btn btn-primary" (click)='voteMinus(true)' type="button" name="button">downVote: {{quote.downVote}}</button>
-    <button class="btn-danger" (click)='quoteDelete(true)' type="button" name="button">Delete</button>
+    <button class="btn btn-primary upvote" (click)='votePlus(true)' type="button" name="button">Up Vote ~ {{quote.upVote}}</button>
+    <button class="btn btn-primary downvote" (click)='voteMinus(true)' type="button" name="button">Down Vote ~ {{quote.downVote}}</button>
+    <button class="btn btn-primary delete " (click)='quoteDelete(true)' type="button" name="button">Delete</button>
     </div>

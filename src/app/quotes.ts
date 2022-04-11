@@ -1,9 +1,18 @@
-export class Quotes {
-    [x: string]: any;
+export class Quote {
+
+    public showDetails: boolean | undefined;
+    public submitDate: Date;
+
+
     constructor(
-        id:number,
-        quote:string,
-        authorName:string,
-        yourName:string,
-    ){}
+        public id: number,
+        public enterQuote: string,
+        public author: string,
+        public upVote: number,
+        public downVote:number,
+        public yourName: string,) {
+
+            this.submitDate = new Date();
+    }
+
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit,Output,EventEmitter  } from '@angular/core';
 import { Quotes } from '../quotes';
 @Component({
   selector: 'app-form-output',
@@ -7,15 +7,16 @@ import { Quotes } from '../quotes';
 })
 export class FormOutputComponent implements OnInit{
 
-    @Input()
+  
+   @Input()
   quotes!: Quotes;
 
           quotes = [
             new Quotes (1,"I have a dream","Martin Luther","Andy"),
           ]
 
-          addNewQuote (quotes){
-            let quoteLength = this.quotes.length;
+          addNewQuote (){
+            
           }
 
    constructor() { }

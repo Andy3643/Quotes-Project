@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Quote } from '@angular/compiler';
+import { Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Quotes } from '../quotes';
 
 
 @Component({
@@ -8,11 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputformComponent implements OnInit {
 
+    
+    newQuote = [1,"","",""]
+    addQuote: any[]=[];
+    
 
-    submitQuote(){
-      //console.log("Button is working!")
-
+    onclick(){
+      
     }
+     submitQuote(){
+
+    //console.log("Button is working!")
+      this.addQuote.push(this.newQuote);
+      this.newQuote = new Quotes (1,"","","")
+     }
 
 
 

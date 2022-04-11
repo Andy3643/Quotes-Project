@@ -1,1 +1,24 @@
-<p>form-input works!</p>
+<form class="myform" #quoteForm="ngForm" (ngSubmit)="saveQuote()">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create Quote</h3>
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author"  #author="ngModel"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="yourName">Your Name Here</label>
+            <input type="text" class="form-control" name="yourName" [(ngModel)]="newQuote.yourName" #yourName="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="enterquote">Enter Quote</label>
+            <textarea class="form-control" type="text" [(ngModel)]="newQuote.enterQuote" name="enterQuote" #enterquote="ngModel" rows="10"></textarea>
+        </div>
+        <pre></pre>
+        
+        <button type="submit" class="btn btn-primary btn-lg btn-block sumbmitBtn"> Add Quote </button>
+        
+    </div>
+</form>

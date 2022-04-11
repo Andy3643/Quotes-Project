@@ -1,27 +1,41 @@
-# Quotes
+# Quotes Generator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+##### By Joshua Opote
 
-## Development server
+## Table of Content
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
++ [Description](#description)
++ [Technology Used](#technology-used)
++ [Live Link](#live-link)
++ [Licence](#licence)
++ [Authors Info](#authors-info)
 
-## Code scaffolding
+## Description
+<p>Quotes Generator is a an online platform you can share some of your best quotes. Other users will vote your quotes, to enable you know how powerful your quotes are.</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+[Go Back to the top](#Quotes-Generator)
+## Technology Used
+* HTML -building the structure of the pages.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* CSS - adding stle and colour to the webpage.
 
-## Running unit tests
+* Typescript - for the bussiness logic.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Live Link
+#### Quotes Generator - ()
 
-## Running end-to-end tests
+[Go Back to the top](#Quotes-Generator)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Licence
 
-## Further help
+[MIT License](LICENSE)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Go Back to the top](#Quotes-Generator)
+
+## Authors Info
+
+Github Profile - [Andy3643](https://github.com/Andy3643)
+
+
+[Go Back to the top](#Quotes-Generator)

@@ -8,6 +8,7 @@ import { FormInputComponent } from './form-input/form-input.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteComponent } from './quote/quote.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { HighlightsDirective } from './highlights.directive';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     FormInputComponent,
     QuoteDetailsComponent,
     QuoteComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    HighlightsDirective
   ],
   imports: [
     BrowserModule,

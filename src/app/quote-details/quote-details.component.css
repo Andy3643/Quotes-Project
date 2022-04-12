@@ -1,13 +1,19 @@
 .upvote{
-    background-color: rgb(85, 246, 4);
+    background-color: rgb(70, 201, 4);
     margin: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
 
 }
 .downvote{
     background-color: rgb(209, 140, 21);
     margin: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
 }
 .delete{
     background-color: red;
     margin: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
 }

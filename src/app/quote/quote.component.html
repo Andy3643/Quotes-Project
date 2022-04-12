@@ -1,21 +1,35 @@
 <div class="mt-5 row">
-    <div class="mt-5 col-md-5 container">
-      <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+  <div class="mt-5 col-md-5 container">
+    <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+  </div>
+  <div class="mt-5 ml-5 col-md-5 container">
+    <div class="display-quotes" *ngFor="let quote of quotes; let i = index">
+      <div *ngIf="quote.upVote == maxVote"></div>
+      <!-- <ng-template #showColor > (to highlight colour, bt not working with the *ngif at the moment) -->
+      <p  class="style">
+        <span>{{ quote.enterQuote }}</span
+         ><br /> <!--add appHighlights directive to it to highlight quotes -->
+      </p>
+      <cite>--{{ quote.author }}</cite>
+      <br />
+      <button
+        class="btn-info moreBtn"
+        (click)="toggleDetails(i)"
+        type="button"
+        name="button"
+      >
+        {{ ShowMore ? "Show More Details" : "Show Less" }}
+      </button>
+      <br />
+      <app-details
+        *ngIf="quote.showDetails"
+        [quote]="quote"
+        (deleteQuote)="deleteQuote($event, i)"
+        (addVote)="plusVote($event, i)"
+        (reduceVote)="minusVote($event, i)"
+      >
+      </app-details>
+      <!-- </ng-template> -->
     </div>
-    <div class="mt-5 ml-5 col-md-5 container ">
-        <div  class="display-quotes" *ngFor='let quote of quotes, let i = index'>
-          
-            <p  class="style"><span>{{quote.enterQuote}}</span><br></p> 
-          
-          <div class="details">
-            <cite>--{{quote.author}}</cite>
-            <br>
-            <button class="btn-info moreBtn" (click)='toggleDetails(i)' type="button" name="button">{{ShowMore?"Show More Details":"Show Less"}}</button>
-            <br>
-            <app-details *ngIf="quote.showDetails" [quote]='quote' (deleteQuote)='deleteQuote($event, i)' (addVote)='plusVote($event, i)'
-              (reduceVote)='minusVote($event, i)'> </app-details>
-          </div>
-        </div>
-    </div>
-    </div>
-  
+  </div>
+</div>

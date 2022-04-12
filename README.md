@@ -23,7 +23,7 @@
 * Typescript - for the bussiness logic.
 
 ## Live Link
-#### Quotes Generator - ()
+#### Quotes Generator - (https://andy3643.github.io/Quotes-Project/)
 
 [Go Back to the top](#Quotes-Generator)
 
